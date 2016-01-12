@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Pickup.cs">
     <Files>
-      <File FileName="Assets\Scripts\Pickup.cs" Line="25" Column="3" />
+      <File FileName="Assets\Scripts\Pickup.cs" Line="18" Column="50" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

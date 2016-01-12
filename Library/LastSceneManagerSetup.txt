@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Ettan.unity
+- path: "Assets/Scenes/Tv\xE5an.unity"
   isLoaded: 1
   isActive: 1
