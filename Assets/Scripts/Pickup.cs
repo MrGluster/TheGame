@@ -16,7 +16,7 @@ public class Pickup : MonoBehaviour {
 			Vector3 fwd = transform.TransformDirection (Vector3.forward);
 
 			if (Physics.Raycast(transform.position, fwd, 1)) {
-				print("Akta!");
+				print("Akta, krock på gång!");
 
 			}}
 		//print("space key was pressed");
