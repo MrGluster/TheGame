@@ -15,8 +15,8 @@ public class Pickup : MonoBehaviour {
 		if (Input.GetButtonDown ("Pickup")) {
 			Vector3 fwd = transform.TransformDirection (Vector3.forward);
 
-			if (Physics.Raycast(transform.position, fwd, 10)) {
-				print("There is something in front of the object!");
+			if (Physics.Raycast(transform.position, fwd, 1)) {
+				print("Akta!");
 
 			}}
 		//print("space key was pressed");
@@ -24,7 +24,9 @@ public class Pickup : MonoBehaviour {
 		//Debug.DrawRay(transform.position, forward, Color.green);
 
 		//skjuta ut en ray mot lådan, kolla hur nära lådan är,
-		//om lådan är tillräckligt nära lyft upp den(Ta bort en komponent, och lägga till en, för att sedan lägga till den första igen,), 
+		//om lådan är tillräckligt nära lyft upp den(Ta bort en komponent, och lägga till en, för att sedan lägga till den första igen,),
+		//lyfta upp = lådan hamnar under forklift_tray eller forklift_tray_traystart med den som parent, ta bort komponent Rigidbody
+		//släpp = lådan blir vuxen (fristående), och Rigidbody läggs tillbaka på lådan igen, helst med samma egenskaper som innan.
 	}
 }
 
