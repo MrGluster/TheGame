@@ -10,13 +10,17 @@ public class Pickup : MonoBehaviour {
 	void Update () {
 	
 		//Pickup??
+		Vector3 fwd = transform.TransformDirection (Vector3.forward);
+		RaycastHit hit;
 		if (Input.GetButtonDown ("Pickup")) {
-			Vector3 fwd = transform.TransformDirection (Vector3.forward);
-
-			if (Physics.Raycast(transform.position, fwd, 1)) {
-				print("Akta, krock på gång!");
-
-			}}
+			if (Physics.Raycast(transform.position, fwd, out hit, 1)) 
+			{
+				hit.collider.transform.parent = transform.parent; 
+				Destroy (hit.collider.attachedRigidbody);
+			
+			//print("Akta, krock på gång!");
+			}
+		}
 		//print("space key was pressed");
 		//Physics.Raycast(transform.position, transform.forward, hit
 		//Debug.DrawRay(transform.position, forward, Color.green);
